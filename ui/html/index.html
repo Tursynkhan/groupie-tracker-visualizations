@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/png" href="../static/img/g.png">
+    <title>Groupie-tracker</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Groupie-tracker</h1>
+    </div>
+    <div class="container">
+        {{range  .}}
+        <div class="cards">
+            <a class="cards-link" href="/open?id={{.Id}}">
+                <div class="cards__image">
+                     <img src="{{.Image}}" alt="logo">
+                </div>
+                <div class="cards__contents">
+                     <div class="cards__content__sections__name">
+                        <h2>{{.Name}}</h2>
+                     </div>
+                </div>
+            </a>
+        </div>
+        {{end}}
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

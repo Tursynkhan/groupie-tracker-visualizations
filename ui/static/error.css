@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+body{
+    background: #202329;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color:aliceblue;
+    font-size: 60px;
+}
+p{
+    color: azure;
+    margin-top: 0;
+    font-size: 60px;
+}
+a{
+    color:black;
+    font-size: 40px;
+    text-decoration: none;
+    background-color:white;
+    border: 1px solid #3c3e44;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+a:hover{
+    background-color:#3c3e44;
+    color: white;
+}

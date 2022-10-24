@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "didot";
+    src: url(./font/Didot/didot_bold.otf);
+}
+@font-face {
+    font-family: "bodoni";
+    src: url(./font/bodoni/BodoniFLF-Bold.ttf);
+}
+@font-face {
+    font-family: "poster";
+    src: url(./font/movie-poster-font/MoviePosterPersonalUse-axyeE.ttf);
+}
+html{
+    height: 100%;
+}
+body{
+    margin:0;
+}
+h1{
+    font-family:"poster";
+    font-size: 64px;
+    color:rgb(32, 35, 41);
+    text-align: center;
+    
+}
+h2{
+    font-family: "didot";
+    font-size: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#202329;
+}
+.cards{
+    width: 500px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    background-color: #3c3e44;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.cards-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.cards:hover .cards-link h2 {
+    color: orange;
+}
+
+.cards__image{
+    flex: 2 1 0%;
+    width: 100%;
+}
+.cards__image img{
+    height: 100%;
+    margin: 0;
+    opacity: 0.8;
+    object-position: center center;
+    object-fit: cover;
+    width: 100%;
+}
+.cards__contents{
+    margin: 0;
+    padding: 0;
+    flex:3 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__content__sections{
+    margin: 0;
+    padding: 0;
+}
+.cards__content__sections__members ul{
+    list-style: none;
+}
+.cards__content__sections__members li{
+    padding-left: 10px;
+    font-size: 14px;
+    color: white;
+}
+.cards__content__sections__name h2{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+.cards__content__sections__name a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.cards__content__sections__members .members-label{
+    color: rgb(158, 158, 158);
+}
+.cards:hover{
+    background-color: rgba(60, 62, 68,0.7);
+}
+@media screen and (max-width:476px) {
+    h1{
+        font-size: 48px;
+    }
+    .cards{
+        height: 180px;
+    }
+    .cards__content__sections__name h2{
+        font-size: 24px;
+    }
+}

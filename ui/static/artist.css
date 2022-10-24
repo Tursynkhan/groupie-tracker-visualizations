@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+@font-face {
+    font-family: "didot";
+    src: url(./font/Didot/didot_bold.otf);
+}
+@font-face {
+    font-family: "bodoni";
+    src: url(./font/bodoni/BodoniFLF-Bold.ttf);
+}
+
+@font-face {
+    font-family: "poster";
+    src: url(./font/movie-poster-font/MoviePosterPersonalUse-axyeE.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: #202329;
+}
+.header{
+    background-color: rgb(245,245,245);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+h1{
+    font-family: "poster";
+    text-align: center;
+    color:rgb(32, 35, 41);
+    font-size: 64px;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+    background-color: #3C3E44;
+    border-radius: 8px;
+    color:rgb(245,245,245);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:15px 0;
+}
+.logo img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.header__content__info{
+    font-family: "bodoni";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+.date__content__info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.album__content__info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+h2{
+    font-family: "didot";
+   text-align: center; 
+   margin: 15px 0;
+}
+
+.members{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.member-name{
+    margin-right: 10px;
+}
+.location-date{
+    border-top: 10px #202329 solid ;
+}
+.city-info{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px rgb(245,245,245) dashed;
+}
+.city-info h3{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.city-info .city{
+    font-family: "didot";
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.date-info{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+.date {
+    padding-bottom: 3px;
+}
+.footer{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+.undo{
+    border-radius: 5px;
+    background-color: rgb(245,245,245);
+    padding: 10px 15px;
+    border: 1px #202329 solid;
+}
+.all-artist{
+    text-decoration: none;
+    color: #202329;
+    font-size: 20px;
+}
+.undo:hover{
+    cursor: pointer;
+    background-color: #3C3E44;
+}
+.undo:hover a{
+    color: aliceblue;
+}
+@media screen and (max-width:992px) {
+    h1{
+        font-size: 52px;
+    }
+    .container{
+        width: 700px;
+    }
+    .logo img{
+        height: 180px;
+        width: 180px;
+    }
+    .header__content__info{
+        font-size: 28px;
+    }
+    .date__content__info{
+        font-size: 18px;
+    }
+    .album__content__info{
+        font-size: 18px;
+    }
+    .members{
+        font-size: 18px;
+    }
+    .city-info{
+        font-size: 16px;
+    }
+    .city-info .city{
+        font-size: 18px;
+    }
+    .date{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px) {
+   
+    h1{
+        font-size: 48px;
+    }
+    .container{
+        width: 500px;
+    }
+    .logo img{
+        height: 150px;
+        width: 150px;
+    }
+    .header__content__info{
+        font-size: 26px;
+    }
+    .date__content__info{
+        font-size: 16px;
+    }
+    .album__content__info{
+        font-size: 16px;
+    }
+    .members{
+        font-size: 16px;
+    }
+    .city-info{
+        font-size: 14px;
+    }
+    .city-info .city{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .all-artist{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:576px) {
+   
+    h1{
+        font-size: 42px;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .container{
+        width: 300px;
+    }
+    .logo img{
+        height: 120px;
+        width: 120px;
+    }
+    .header__content__info{
+        font-size: 20px;
+    }
+    .date__content__info{
+        font-size: 14px;
+    }
+    .album__content__info{
+        font-size: 14px;
+    }
+    .members{
+        font-size: 14px;
+    }
+    .city-info{
+        font-size: 12px;
+    }
+    .city-info .city{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    .undo{
+        padding: 5px 10px;
+    }
+    .all-artist{
+        font-size: 16px;
+    }
+}

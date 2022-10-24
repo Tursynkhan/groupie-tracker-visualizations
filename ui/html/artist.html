@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/artist.css">
+    <title>Artist</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Groupie-tracker</h1>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="{{.Image}}">
+        </div>
+        <div class="content__info">
+            <div class="header__content__info">
+                {{.Name}}
+            </div>
+            <div class="date__content__info">
+                <span class="header__content__info-date">
+                    CreationDate:
+                </span>
+                {{.CreationDate}}
+            </div>
+            <div class="album__content__info">
+                <span class="header__content__info-album">First Album:</span>
+                {{.FirstAlbum}}
+            </div>
+        </div>
+        <h2>Members</h2>
+        <div class="members">
+            {{range .Members}}
+            <div class="member-name">
+                {{.}}
+            </div>
+            {{end}}
+        </div>
+        <h2>Concert List</h2>
+        <div class="content__concert">
+            {{range $city,$date:=$.DatesLocation}}
+            <div class="location-date">
+                <div class="city-info">
+                    <h3>Location</h3>
+                    <p class="city">
+                        {{$city}}
+                    </p>
+                </div>
+                <div class="date-info">
+                    {{range $_,$elem:=$date}}
+                    <div class="date">
+                        {{$elem}}
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+    <div class="footer"> 
+        <div class="undo">
+            <a href="/" class="all-artist">All artist</a> 
+        </div>
+    </div>
+</body>
+</html>
